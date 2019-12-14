@@ -21,11 +21,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="site container">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'star-theme' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<div class="site-branding col-md-4">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -54,5 +54,6 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+	<div class ="container">
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content row">
