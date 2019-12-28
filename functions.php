@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * Star-Theme functions and definitions
  *
@@ -130,7 +130,7 @@ function star_theme_scripts() {
 
 
   	wp_enqueue_script( 'star-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
+ 
 	wp_enqueue_script( 'star-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -149,6 +149,7 @@ require get_template_directory() . '/inc/custom-header.php';
  */
 require get_template_directory() . '/inc/template-tags.php';
 
+
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
@@ -163,6 +164,12 @@ require get_template_directory() . '/inc/customizer.php';
  */
 
 require get_template_directory() . '/inc/widgets.php';
+/**
+* Bootstrap Navwalker File.
+ */
+
+require get_template_directory() . '/inc/bootstrap-wp-nawalker.php';
+
 /**
  * Load Jetpack compatibility file.
  */

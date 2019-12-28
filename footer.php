@@ -10,12 +10,12 @@
  */
 
 ?>
-	</div>
+
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+	<footer id="colophon" class="site-footer row">
+		<div class="site-info col-md-12">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'star-theme' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
