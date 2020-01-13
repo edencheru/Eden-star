@@ -104,6 +104,12 @@ function star_theme_content_width() {
 }
 add_action( 'after_setup_theme', 'star_theme_content_width', 0 );
 
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+  global $post;
+ return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read the full article...</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 /**
  * Enqueue scripts and styles.
