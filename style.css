@@ -413,6 +413,29 @@ a:hover, a:active {
 }
 
 
+.navbar {
+	padding-left: 0;
+	padding-right: 0;
+}
+.open > .dropdown-menu {
+	-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+		opacity: 1;
+}
+.dropdown-menu{
+	margin-top: 0;
+	opacity: .5;
+	-webkit-transform-origin: top;
+	transform-origin: top;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-transform: scale(1,0);
+	transition: all 0.3s linear;
+}
+.dropdown-toggle::after{
+	vertical-align: .150em;
+}
+
 .top top:link {
 	color: #333;
 	position: fixed;
