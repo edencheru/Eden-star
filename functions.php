@@ -116,10 +116,10 @@ add_filter('excerpt_more', 'new_excerpt_more');
  */
 function star_theme_scripts() {
 	wp_enqueue_style('star-theme-bs-css',get_template_directory_uri() .
-		'/dist/css/bootstrap.min.css');
+		'/assets/css/bootstrap.min.css');
 
-	wp_enqueue_style('star-theme-fontawsome',get_template_directory_uri() .
-		'/fonts/font-awesome/css/font-awesome.min.css');
+	wp_enqueue_style('star-theme-fontawsom',get_template_directory_uri() .
+		'/fonts/font-awesom/css/font-awesome.min.css');
 
 	wp_enqueue_style( 'star-theme-style', get_stylesheet_uri() );
 

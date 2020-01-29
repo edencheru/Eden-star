@@ -135,6 +135,22 @@ hr {
 	margin-bottom: 1.5em;
 }
 
+.site-title a{
+	margin: 0;
+}
+.site-title a:hover {
+	text-decoration: none;
+	
+}
+.site-description {
+	font-size: 15px;
+	letter-spacing: 1px;
+	
+}
+#masthead {
+	margin-bottom: 30px;
+
+
 ul, ol {
 	margin: 0 0 1.5em 3em;
 }
@@ -172,6 +188,22 @@ figure {
 	margin: 1em 0;
 	/* Extra wide images within figure tags don't overflow the content area. */
 }
+
+.cat-links, .tags-links {
+	margin-right: 5px;
+}
+.cat-links a, .tags-links a, .edit-link a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #2980b9;
+} 
+.edit-link _{
+	margin-left: 5px;
+}
+.cat-links a:focus .cat-links a:hover, .tags-links a:focus , .tags-links a:hover, .edit-link a:focus, .edit-link a:hover {
+	border-bottom: solid 1px #2980b9;
+} 
+
 
 table {
 	margin: 0 0 1.5em;
@@ -380,6 +412,30 @@ a:hover, a:active {
 	width: 50%;
 }
 
+
+.top top:link {
+	color: #333;
+	position: fixed;
+	z-index: 999;
+	bottom: 200px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	opacity: .9;
+	border: none;
+}
+.top:hover {
+	opacity: 1;
+	text-decoration: none;
+	color: #fff;
+	background: #333;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -485,6 +541,23 @@ a:hover, a:active {
 
 .widget select {
 	max-width: 100%;
+}
+
+
+/* Tag Cloud */
+.tagcloud a {
+	border: 1px solid;
+	border-radius: 2px;
+	display: inline-block;
+	line-height: 1;
+	margin: 0 25px 5px 0;
+	padding: 5px;
+	text-decoration: none;
+
+}
+.togcloud a:hover, .tagcloud a:focused{
+	color: #21759b;
+	outline: 0;
 }
 
 /*--------------------------------------------------------------
