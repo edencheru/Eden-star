@@ -811,3 +811,20 @@ footer .site-info{
 	width: 300px;
 
 
+}
+
+.entry-footer{
+	margin-top: 30px;
+}
+
+#widget-area{
+	margin-top: 110px;
+}
+
+#read_more_button{
+	background-color: #007bff;
+	border-color: #007bff;
+	
+}
+
+
