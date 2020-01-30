@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Star-Theme
+ * @package Star
  */
 
 ?>
@@ -23,7 +23,7 @@
 		the_content();
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'star-theme' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'star' ),
 			'after'  => '</div>',
 		) );
 		?>
@@ -36,7 +36,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'star-theme' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'star' ),
 						array(
 							'span' => array(
 								'class' => array(),

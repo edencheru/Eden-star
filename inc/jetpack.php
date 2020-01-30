@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Star-Theme
+ * @package Star
  */
 
 /**
@@ -28,7 +28,7 @@ function star_theme_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details'    => array(
-			'stylesheet' => 'star-theme-style',
+			'stylesheet' => 'star-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',

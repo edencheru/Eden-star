@@ -1,8 +1,8 @@
 <?php
 /**
- * Star-Theme Theme Customizer
+ * Star Theme Customizer
  *
- * @package Star-Theme
+ * @package Star-
  */
 
 /**
