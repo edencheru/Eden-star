@@ -100,6 +100,13 @@ abbr, acronym {
 	cursor: help;
 }
 
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
 mark, ins {
 	background: #fff9c0;
 	text-decoration: none;

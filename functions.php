@@ -1,13 +1,13 @@
  <?php
 /**
- * Star-Theme functions and definitions
+ * Star functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Star-Theme
+ * @package Star
  */
 
-if ( ! function_exists( 'star_theme_setup' ) ) :
+if ( ! function_exists( 'star_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -19,10 +19,10 @@ if ( ! function_exists( 'star_theme_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Star-Theme, use a find and replace
-		 * to change 'star-theme' to the name of your theme in all the template files.
+		 * If you're building a theme based on Star, use a find and replace
+		 * to change 'stare' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'star-theme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'star', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ if ( ! function_exists( 'star_theme_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'Primary' => esc_html__( 'Primary', 'star-theme' ),
+			'Primary' => esc_html__( 'Primary', 'star' ),
 		) );
 
 		/*
@@ -115,29 +115,29 @@ add_filter('excerpt_more', 'new_excerpt_more');
  * Enqueue scripts and styles.
  */
 function star_theme_scripts() {
-	wp_enqueue_style('star-theme-bs-css',get_template_directory_uri() .
+	wp_enqueue_style('star-bs-css',get_template_directory_uri() .
 		'/assets/css/bootstrap.min.css');
 
-	wp_enqueue_style('star-theme-fontawsom',get_template_directory_uri() .
+	wp_enqueue_style('star-fontawsom',get_template_directory_uri() .
 		'/fonts/font-awesom/css/font-awesome.min.css');
 
-	wp_enqueue_style( 'star-theme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'star-style', get_stylesheet_uri() );
 
   wp_register_script('popper', get_template_directory_uri() . '/assets/js/popper.min.js', array(), '20170710', true );
 
-  wp_enqueue_script( 'star-theme-tether', get_template_directory_uri() . '/assets/js/tether.min.js', array(), '20170115', true );
+  wp_enqueue_script( 'star-tether', get_template_directory_uri() . '/assets/js/tether.min.js', array(), '20170115', true );
    
-  wp_enqueue_script( 'star-theme_bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '20170915', true );
+  wp_enqueue_script( 'star_bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '20170915', true );
  
 
-  wp_enqueue_script( 'star-theme-bootstrap-hover', get_template_directory_uri() . '/assets/js/bootstrap-hover.js', array('jquery'), '20170115', true ); 
+  wp_enqueue_script( 'star-bootstrap-hover', get_template_directory_uri() . '/assets/js/bootstrap-hover.js', array('jquery'), '20170115', true ); 
 
-  wp_enqueue_script( 'star-theme-nav-scroll', get_template_directory_uri() . '/assets/js/nav-scroll.js', array('jquery'), '20170115', true );
+  wp_enqueue_script( 'star-nav-scroll', get_template_directory_uri() . '/assets/js/nav-scroll.js', array('jquery'), '20170115', true );
 
 
-  	wp_enqueue_script( 'star-theme-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
+  	wp_enqueue_script( 'star-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
  
-	wp_enqueue_script( 'star-theme-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'star-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
