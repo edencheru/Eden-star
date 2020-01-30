@@ -758,3 +758,13 @@ object {
   background: #3cb0fd;
   text-decoration: none;
   }
+
+  /* blog header */
+
+.blog h1{
+	text-align: center;
+	color: rgb(0, 0, 0);
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: xx-large;
+}
