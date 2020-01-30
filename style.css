@@ -768,3 +768,22 @@ object {
 	margin-bottom: 50px;
 	font-size: xx-large;
 }
+
+/* box css */
+.boxes{
+	text-align: center;
+	background: #fff;
+	margin-bottom: 30px;
+}
+
+.box .fa{
+	font-size: 45px !important;
+	margin-bottom: 10px;
+}
+
+.box{
+	padding: 15px;
+	border: #ccc 1px solid;
+}
+
+
